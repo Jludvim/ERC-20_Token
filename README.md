@@ -1,66 +1,31 @@
-## Foundry
+## ERC-20 Token
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**this is a project developed exploring the ERC-20 protocol. It features two main contracts. a ManualToken.sol, and OurToken.sol**
 
-Foundry consists of:
+**OurToken** is a token developed using the OpenZeppelin library, and following the general Guideline of
+Patrick Collins course.
+**ManualToken** is a contract manually developed using the description set for the required functions in the official documentation for ERC.
+It does add some small, extra functionality over it. 
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+**None of the code here presented has (as of yet) been audited, and is hence unsuited for actual deployment**
 
-## Documentation
+### QuickStart
 
-https://book.getfoundry.sh/
+1. Clone the repository: `git clone https://github.com/Jludvim/ERC-20_Token.git`
+2. Navigate to the project directory: `cd ERC-20_Token`
 
-## Usage
+### Layout
+It does feature the two main files, ManualToken.sol and OurToken.sol, bot of which are functionally independent. To each do also correspond a script file used for deployment, and a test file (named after the main contracts respectively). 
 
-### Build
+### requirement
+Solidity 0.8.18 or higher
+An ubuntu terminal (or WSL for windows) to execute the related commands
+A blockchain address, regardless of the network
+Getting tokens from a faucet, or keeping some in the wallet
 
-```shell
-$ forge build
-```
+### License
+This project is licensed under the MIT License
 
-### Test
+### Contact
+You can write at the following email: jeremiaspini7@gmail.com
 
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
