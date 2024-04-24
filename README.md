@@ -13,6 +13,7 @@ It does add some small, extra functionality over it.
 
 1. Clone the repository: `git clone https://github.com/Jludvim/ERC-20_Token.git`
 2. Navigate to the project directory: `cd ERC-20_Token`
+3. Deploy the contract
 
 ### Layout
 It does feature the two main files, ManualToken.sol and OurToken.sol, bot of which are functionally independent. To each do also correspond a script file used for deployment, and a test file (named after the main contracts respectively). 
