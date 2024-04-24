@@ -11,12 +11,15 @@ It does add some small, extra functionality over it.
 
 ### QuickStart
 
-1. Clone the repository: `git clone https://github.com/Jludvim/ERC-20_Token.git`
-2. Navigate to the project directory: `cd ERC-20_Token`
-3. Deploy the contract
+1. Clone the repository:
+  ```git clone https://github.com/Jludvim/ERC-20_Token.git```
+3. Navigate to the project directory: ```cd ERC-20_Token```
+4. Deploy the contract
+  ``` forge script script/DeployManualToken:DeployManualToken --rpc-url (Your_RPC_URL) --private-key (Do not Use plain text!) --broadcast --verify --etherscan-api-key (your_api_key)```
+(Or change DeployManualToken to DeployOurToken)
 
 ### Layout
-It does feature the two main files, ManualToken.sol and OurToken.sol, bot of which are functionally independent. To each do also correspond a script file used for deployment, and a test file (named after the main contracts respectively). 
+It does feature the two main files, **ManualToken.sol** and **OurToken.sol**, bot of which are functionally independent. To each do also correspond a script file used for deployment, and a test file (named after the main contracts respectively). 
 
 ### requirement
 Solidity 0.8.18 or higher
