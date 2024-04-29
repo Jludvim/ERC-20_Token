@@ -4,7 +4,7 @@
 
 **OurToken** is a token developed using the OpenZeppelin library, and following the general Guideline of
 Patrick Collins course.
-**ManualToken** is a contract manually developed using the description set for the required functions in the official documentation for ERC.
+**ManualToken** is a contract manually and personally developed using the description set for the required functions in the official documentation for ERC.
 It does add some small, extra functionality over it. 
 
 **None of the code here presented has (as of yet) been audited, and is hence unsuited for actual deployment**
